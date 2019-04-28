@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+        <meta lang="utf-8">
+        <meta name="viewport" content="width=width-device, initial-scale=1.0" >
+        <title>Yoga</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: rgb(81, 150, 253);
+            }
+
+            h1{
+                font-family: Arial, sans-serif;
+
+            }
+
+            p{
+                font-family: Arial, sans-serif;
+            }
+
+            ul{
+                list-style-type: none;
+                margin:0;
+                padding: 10px 40px 10px 10px;
+                overflow: hidden;
+                background-color:rgb(173, 167, 212);
+                margin-right: 0;
+                
+            }
+
+            #navbar_brand {
+                font-size: 2rem;
+                font-weight: bold;
+                float: right;
+                color: blueviolet;
+                cursor: default;
+            }
+
+            .MOM{
+                margin-left: 65px;
+                margin-right:65px;
+            }
+           
+            h2{
+                text-align: center;
+                border-style: outset;
+                
+            }
+
+            li{
+                display:inline-block;
+            }
+        
+            li > a{
+                display: inline-block;
+                color:white;
+                text-decoration: none;
+                padding:16px 16px 16px;
+                transition: 0.2s all;
+            }
+            li a:hover{
+                background-color: blueviolet;
+                color:black;
+            }
+
+            .main{
+                margin:10px;
+            }
+
+            .main > p {
+                font-weight:bold;
+                font-size: 25px;
+                text-align: center;
+            }
+
+            .headers{
+                border-top: 1px solid burlywood;
+                border-right: 5px solid burlywood;
+                border-width: 5px;
+                padding:5px 5px 5px 5px;
+                width:130px;
+                border-style:groove;
+                color: blueviolet;
+
+            }
+
+            .subs{
+                display: inline-block;
+                padding:10px 10px 10px 10px;
+                margin: auto;
+            }
+
+
+            .flex{
+                display: flex;
+                flex-wrap: wrap;
+                /* align-items: center; */
+                justify-content: space-around;
+               
+            }
+
+            .grid{
+                border:0;
+                padding: 10px 10px 10px 10px;
+                background-color:rgb(173, 167, 230);
+                margin:20px;
+                width:200px;
+                transition: 0.5ms;
+                box-sizing: border-box;
+                cursor: default;
+            }
+            .grid:hover{
+                background-color:rgb(99, 108, 236);
+            }
+
+            .contacts{
+                margin: 10px;
+            }
+
+            .contacts{
+                margin-right: 5px;
+            }
+
+            .contacts .headers{
+                width: 170px;
+
+            }
+
+            .form{
+                border: 1px solid black;
+                background-color: rgb(173, 167, 212);
+                padding: 30px;
+                margin-right: 200px;
+                width: 800px;
+
+            }
+
+            div.form img{
+                width: 400px;
+                height: 350px;
+            }
+
+            input{
+                box-sizing: border-box;
+
+            }
+
+            input[type="text"]{
+                box-sizing: border-box;
+                border-radius: 4px;
+                padding: 15px;
+                margin: 10px;
+                font-size: 15px;
+                width: auto;
+                height: auto;
+            }
+
+            input[type="text"]:focus{
+                border: 2px solid #555;
+
+            }
+
+            input[type="button"]{
+                padding: 10px 10px 10px 10px;
+                margin: 10px;
+                background-color:rgb(173, 167, 212);
+
+
+            }
+
+            input[type="button"]:hover{
+                color: white;
+
+            }
+
+            p > img{
+                width: 50px;
+                height: 30px;
+                padding: 5px;
+
+            }
+
+            .active:hover{
+                color: white;
+            }
+
+            .subs2{
+                float: left;
+                margin: auto;
+            }
+
+            #about{
+                width: 150px;
+                clear: left;
+                text-align: center;
+            }
+
+
+            .about-us{
+                margin: 10px;
+
+            }
+
+
+            .mentorlist{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+            }
+
+            div.mentors{
+                border: 1px solid white;
+                width: 300px;
+                padding: 10px 10px 10px 10px;
+                margin: 10px;
+
+            }
+
+            div.mentors img{
+                width: 100%;
+                height: 250px;
+            }
+
+            div.mentors p {
+                padding: 10px;
+
+            }
+
+            .copyright{
+                text-align: center;
+                border: 0;
+
+            }
+
+            .copyright p{
+                padding: 4px 3px 4px 3px;
+                border: 1px solid blueviolet;
+                background-color: rgb(173, 167, 200);
+            }
+
+
+
+        </style>
+    </head>
+
+
+    <body>
+        <div class="container">
+
+            <div class="navigators">
+                <ul>
+                    <li id="navbar_brand">Yoga</li>
+                    <li><a href="#home" id="home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+                <img src="img-home.jpg" alt="#" style="width:100%;height:550px">
+
+            </div>
+            
+            <div class="main">
+                <h1 id="portfolio" class="headers">Portfolio</h1>
+                <p>Yoga - <q><ins>Addition of energy, strenght and beauty to the body, mind and soul.</ins></q></p>
+                <div class="flex">
+                    <p class="grid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat debitis voluptates tenetur iure autem aut consectetur. Laudantium, id. Veritatis placeat aspernatur eligendi voluptatum in aliquam sed delectus optio harum laudantium?</p>
+                    <p class="grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sit quas neque ad rerum et rem exercitationem consequatur necessitatibus ratione ex corrupti temporibus recusandae alias, incidunt fuga quis corporis laborum.</p>
+                    <p class="grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum recusandae nobis aliquam tempore distinctio tenetur, molestias, obcaecati earum voluptatibus quasi optio sit nemo odit cum natus, nesciunt laborum ipsum? Temporibus!</p>
+                    <p class="grid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere sunt repellendus eius saepe cumque corporis consectetur, laborum asperiores voluptatem a minima dolore nostrum! Et nulla minima veritatis, provident quae accusantium!</p>
+                    <p class="grid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quod excepturi error numquam harum culpa maiores cupiditate nesciunt, quis asperiores perspiciatis illo dolore esse ad quasi ratione exercitationem doloribus laudantium.</p>
+                    <p class="grid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat debitis voluptates tenetur iure autem aut consectetur. Laudantium, id. Veritatis placeat aspernatur eligendi voluptatum in aliquam sed delectus optio harum laudantium?</p>
+                    <p class="grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sit quas neque ad rerum et rem exercitationem consequatur necessitatibus ratione ex corrupti temporibus recusandae alias, incidunt fuga quis corporis laborum.</p>
+                    <p class="grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum recusandae nobis aliquam tempore distinctio tenetur, molestias, obcaecati earum voluptatibus quasi optio sit nemo odit cum natus, nesciunt laborum ipsum? Temporibus!</p>
+                    <p class="grid">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere sunt repellendus eius saepe cumque corporis consectetur, laborum asperiores voluptatem a minima dolore nostrum! Et nulla minima veritatis, provident quae accusantium!</p>
+                    <p class="grid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quod excepturi error numquam harum culpa maiores cupiditate nesciunt, quis asperiores perspiciatis illo dolore esse ad quasi ratione exercitationem doloribus laudantium.</p>
+
+                    <ul class="subs">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <p><q>Change is not something that we should fear - There is always room for change, but you have to be open to that change.</q></p>
+            </div>
+
+            <div class="contacts">
+                <h1 id="contact" class="headers">Contact Us</h1>
+                <p>You can reach us by sending us your personal informations or following us on our available platforms or media. And we will give you the answers to your problems.</p>
+                <div class="form">
+                    <form action="Database1.accdb" method="get">    
+                        <h3>Personal Information</h3>
+                        <h4 align="right">Fill it Correctly to get the best experience.</h4>
+                        <img src="fill.jpeg" alt="" style="float:right;"> </form>
+
+
+                        <p>FirstName:</p>
+                        <input type="text" name="fname" placeholder="First" required>
+                        
+                        <p>LastName:</p>
+                        <input type="text" name="lname" placeholder="Surname" required>
+                        
+                        <p>Email:</p>
+                        <input type="text" name="email" placeholder="Email" required>
+
+                        <p>Country:</p>
+                        <input type="text" list="countries" name="Country" required>
+                        <datalist id="countries">
+                            <option value="Algeria">
+                            <option value="Nigeria">
+                            <option value="India">
+                        </datalist>
+
+
+                        <p>Sex</p>
+                        <input type="radio" name="Radios" checked> Male<br>
+                        <input type="radio" name="Radios">Female<br>
+
+                        <p>Questions:</p>
+                        <textarea name="Message" rows="5" cols="30" placeholder="Message"></textarea>
+
+                        <input type="button" name="btn" id="btn" value="Submit" onclick="alert('Congratulations!. We\'ll reply you with a mail.')" >
+
+
+                </div>
+
+                <p>You can follow us on <a href="" class="active"><img src="" alt="#facebook"></a> <a href="" class="active"><img src="img-2.png" alt="Instagram"></a> <a href="" class="active"><img src="img-1.png" alt="Twitter"></a> to get updates on every skills needed for beginners, intermediates and experts.</p>
+                
+            </div>
+                <ul class="subs2">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            <div class="about-us">
+                <div id="last-header"><h1 id="about" class="headers">About Us</h1></div>
+                <p>A Website that helps you to understand better about meditation and assist you in your journey of understanding the principles of mind.</p>
+                <p>We help people in achieving their dreams of learning and understanding yoga the right way providing them with mentors.</p>
+                <div class="MOM"><h2>Meet our Mentors.</h2></div>
+                <div class="mentorlist">
+                    <div class="mentors">
+                        <img src="ment-1.jpeg">
+                        <p>Hi!, I am Yarung Ali. I live in china. I am tout-de-cake manager and i also own a yoga firm, Lasiga.
+                        You can contact me @ ali_yarung@Yahoo.com</p>
+                    </div>
+                    <div class="mentors">
+                        <img src="ment-2.jpg">
+                        <p>Hello!, Aleig news. I live in Norway and work in a gym where i teach people yoga livei.
+                        Contact me @ new-s-aleig@gmail.com</p>
+                    </div>
+                    <div class="mentors">
+                        <img src="ment-3.jpeg">
+                        <p>Hi!, I am Emmanuel Lingard. The CEO of YogaL and the Chairman of all Yoga firms in the U.S.A. I own the popular lingary Yoga firm.
+                        Contact me @ emmanuel-lingard@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="copyright"><p> Copyright &copy 2018-2019 by Emmanuel Oloyede. All rights reserved.</p>
+
+                </div>
+                    
+            </div>
+
+        </div>
+
+    </body>
+</Html>
